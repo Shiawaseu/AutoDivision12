@@ -42,12 +42,12 @@ template_paths = ["frisker.png", "fishbone.png", "menos.png", "adjuchas.png", "a
 template_paths = [os.path.abspath('templates/' + template) for template in template_paths]
 
 
-print("[!] Started")
+print("\n[!] Started, please switch to game and start minigame")
 
 while True:
 
     found_any = False
-    
+
     for template_path in template_paths:
         x, y, found = find_template(template_path)
         if found:
